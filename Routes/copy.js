@@ -6,7 +6,7 @@ const {
   createBlog
 } = require('../Controllers/blogController');
 
-const { protect, creatorOnly } = require('../middleware/authMiddleware');
+const { protect, creatorOnly } = require('../Middleware/authMiddleware');
 
 router.get('/', getBlogs);
 router.get('/:id', getBlogById);
